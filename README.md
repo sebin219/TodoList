@@ -10,3 +10,6 @@
 2. 랜덤 좌우명 (중앙 하단)
 
 - quotes 배열을 설정 후, showRandomQuote()함수를 사용하여 새로고침 시 새로운 좌우명이 랜덤으로 나오도록 설정
+
+<img src = "./example.png">
+<img src = "./flowchart.png">
