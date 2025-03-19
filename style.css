@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+} /*리셋을 위해 적은 내용*/
+
+body {
+  background-color: #ced3df;
+}
+/* section */
+.container {
+  width: 80%;
+  max-width: 400px;
+  margin: 80px auto 50px;
+  background-color: #f1f0f7;
+  -webkit-box-shadow: 9px 11px 5px 0px rgba(125, 124, 125, 1);
+  -moz-box-shadow: 9px 11px 5px 0px rgba(125, 124, 125, 1);
+  box-shadow: 9px 11px 5px 0px rgba(125, 124, 125, 1);
+  border-radius: 20px;
+  padding: 10px;
+  right: 40px;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-style: normal;
+  text-align: center;
+  color: whitesmoke;
+  background: linear-gradient(
+    90deg,
+    rgb(243, 228, 146) 10%,
+    rgb(237, 206, 233) 35%,
+    rgb(155, 153, 210) 90%
+  );
+  border-radius: 10px 10px 0 0;
+  position: relative;
+}
+
+.todoCount {
+  font-size: 1rem;
+  font-weight: bold;
+  color: whitesmoke;
+  width: 35px;
+  background-color: rgba(81, 77, 78, 0.3);
+  padding: 5px 10px;
+  border-radius: 40%;
+}
+
+/* ul */
+.items {
+  padding: 1rem;
+  height: 500px;
+  overflow-y: auto;
+}
+/* li */
+.item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.item:hover {
+  background-color: #eae9ee;
+}
+/* li 체크 클릭됐을 때 */
+.item.item_done span {
+  opacity: 0.1;
+  text-decoration: line-through;
+}
+.item span {
+  flex: 1;
+  text-align: left;
+}
+
+/*  아이콘 */
+.fa-square-check,
+.fa-trash-can {
+  font-size: 16px;
+  transition: 0.3s;
+}
+.fa-square-check:hover {
+  color: dodgerblue;
+}
+.fa-trash-can:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.footer {
+  background: rgba(237, 193, 211);
+  background: linear-gradient(
+    90deg,
+    rgb(243, 228, 146) 10%,
+    rgb(237, 206, 233) 35%,
+    rgb(155, 153, 210) 90%
+  );
+  border-radius: 0 0 10px 10px;
+}
+
+.footer_input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 1rem 1rem 1.25rem;
+}
+
+.fa-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  font-size: 1.5rem;
+  background-color: rgb(74, 74, 74);
+  border-radius: 50%;
+  color: white;
+  transition: 0.3s;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.fa-plus:hover {
+  transform: translateY(-15px) scale(1.1); /*translateY는 위로 커지게 하는 기능을 가짐*/
+}
+
+.quote {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(35, 40, 40);
+  font-style: italic;
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(138, 167, 235, 0.7);
+  border-radius: 10px;
+}

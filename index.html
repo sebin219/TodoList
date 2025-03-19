@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <span class="todoCount">0</span>
+        <h1>To-do List</h1>
+      </header>
+      <!-- 남은 할일 개수 표시 -->
+      <ul class="items">
+        <li class="item item_done">
+          <span>오늘의 할 일 예시 1</span>
+          <i class="fa-regular fa-square-check"></i>
+          <i class="fa-regular fa-trash-can"></i>
+          <!--<button><i></i></button> 형태로 적는 게 더 이상적  -->
+        </li>
+      </ul>
+      <footer class="footer">
+        <input type="text" class="footer_input" />
+        <i class="fa-solid fa-plus"></i>
+      </footer>
+      <div class="quote">"열심히 하면 길은 열린다"</div>
+    </section>
+  </body>
+</html>
